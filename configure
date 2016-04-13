@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Set up python-related environment settings
-PYTHON_BIN_PATH=~/anaconda3/envs/vision/bin/python
+PYTHON_BIN_PATH=$(which python)
 
 # Invoke python_config and set up symlinks to python includes
 (./util/python/python_config.sh --setup "$PYTHON_BIN_PATH";) || exit -1
